@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/mark/.ssh/private_keys'
+let g:netrw_dirhist_2='/Users/mark/.vim'
+let g:netrw_dirhist_3='/usr/local/etc/privoxy'
+let g:netrw_dirhist_4='/Users/mark/Engagements/nte/backup/glogin'
+let g:netrw_dirhist_5='/Users/mark/Engagements/TCB-MFA/Source'
+let g:netrw_dirhist_6='/Users/mark/Engagements/TCB-MFA/Source/MFA.Data'
+let g:netrw_dirhist_7='/Users/mark/Engagements/TCB-MFA/Source/MFA.Data/bin'
+let g:netrw_dirhist_8='/Users/mark/Engagements/TCB-MFA/Source'
