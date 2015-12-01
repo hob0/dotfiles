@@ -110,6 +110,6 @@ alias python="python3.4"
 alias pip="pip3"
 alias en="cd ~/Engagements"
 alias pr="cd ~/Projects"
-alias paste="echo `pbpaste`"
+alias p="echo `pbpaste`"
 # alias daily="cp ~/Engagements/docs/Praetorian\ -\ Client\ -\ Daily\ Update\ -\ MM-DD-YYYY.docx ."
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

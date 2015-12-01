@@ -26,6 +26,10 @@ nnoremap <C-h> <C-w>h
 nnoremap <Space> za
 nnoremap <C-m> zMzv
 
+" hexediting
+nmap <Leader>hh :%!xxd<CR>
+nmap <Leader>hb :%!xxd -r<CR>
+
 nmap <Leader>ev :e $MYVIMRC<CR>
 nmap <Leader>sv :so $MYVIMRC<CR>
 nmap <Leader>td :e ~/TODO.mkd<CR>
