@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/mark/.oh-my-zsh
+export ZSH=/Users/juliandunning/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -30,7 +30,7 @@ set -o vi
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
 
-# Uncomment the following line if you want to disable marking untracked files
+# Uncomment the following line if you want to disable juliandunninging untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
@@ -51,7 +51,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/Users/mark/.rvm/gems/ruby-2.2.0/bin:/Users/mark/.rvm/gems/ruby-2.2.0@global/bin:/Users/mark/.rvm/rubies/ruby-2.2.0/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mark/.rvm/bin"
+export PATH="/Users/juliandunning/.rvm/gems/ruby-2.2.0/bin:/Users/juliandunning/.rvm/gems/ruby-2.2.0@global/bin:/Users/juliandunning/.rvm/rubies/ruby-2.2.0/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/juliandunning/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -82,12 +82,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 mp() {
-  mkdir /Users/mark/Engagements/$1
-  mkdir /Users/mark/Engagements/$1/screenshots
-  mkdir /Users/mark/Engagements/$1/reporting
-  mkdir /Users/mark/Engagements/$1/daily-status-updates
-  cd /Users/mark/Engagements/$1
-  cp /Users/mark/Engagements/docs/notes_template.mkd notes.mkd
+  mkdir /Users/juliandunning/engagements/$1
+  mkdir /Users/juliandunning/engagements/$1/screenshots
+  mkdir /Users/juliandunning/engagements/$1/reporting
+  mkdir /Users/juliandunning/engagements/$1/daily-status-updates
+  cd /Users/juliandunning/engagements/$1
+  cp /Users/juliandunning/engagements/reporting/notes_template.mkd notes.mkd
 }
 
 daily() {
@@ -108,7 +108,7 @@ alias ncat="/usr/local/Cellar/nmap/6.47/bin/ncat"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias python="python3.4"
 alias pip="pip3"
-alias en="cd ~/Engagements"
+alias en="cd ~/engagements"
 alias pr="cd ~/Projects"
 alias p="echo `pbpaste`"
 # alias daily="cp ~/Engagements/docs/Praetorian\ -\ Client\ -\ Daily\ Update\ -\ MM-DD-YYYY.docx ."
