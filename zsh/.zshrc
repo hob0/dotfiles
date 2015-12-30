@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/juliandunning/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -30,7 +30,7 @@ set -o vi
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
 
-# Uncomment the following line if you want to disable juliandunninging untracked files
+# Uncomment the following line if you want to disable $HOMEing untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
@@ -51,7 +51,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/Users/juliandunning/.rvm/gems/ruby-2.2.0/bin:/Users/juliandunning/.rvm/gems/ruby-2.2.0@global/bin:/Users/juliandunning/.rvm/rubies/ruby-2.2.0/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/juliandunning/.rvm/bin"
+export PATH="$HOME/.rvm/gems/ruby-2.2.0/bin:/Users/$HOME/.rvm/gems/ruby-2.2.0@global/bin:/Users/$HOME/.rvm/rubies/ruby-2.2.0/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/$HOME/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -82,25 +82,18 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 mp() {
-  mkdir /Users/juliandunning/engagements/$1
-  mkdir /Users/juliandunning/engagements/$1/screenshots
-  mkdir /Users/juliandunning/engagements/$1/reporting
-  mkdir /Users/juliandunning/engagements/$1/daily-status-updates
-  cd /Users/juliandunning/engagements/$1
-  cp /Users/juliandunning/engagements/reporting/notes_template.mkd notes.mkd
+  mkdir $HOME/engagements/$1
+  mkdir $HOME/engagements/$1/screenshots
+  mkdir $HOME/engagements/$1/reporting
+  mkdir $HOME/engagements/$1/daily-status-updates
+  cd $HOME/engagements/$1
+  cp $HOME/engagements/reporting/notes_template.mkd notes.mkd
 }
 
 daily() {
 dt=$(date -v +1d '+%m-%d-%Y');
 cp ~/Engagements/docs/Praetorian\ -\ Client\ -\ Daily\ Update\ -\ MM-DD-YYYY.docx ./Praetorian\ -\ "$1"\ -\ Daily\ Update\ -\ "$dt".docx
 open Praetorian\ -\ "$1"\ -\ Daily\ Update\ -\ "$dt".docx
-}
-
-rand() {
-  r=`python ~/Tools/scripts/rand.py $1`
-  echo $r
-  echo $r | pbcopy
-  echo "Copied to clipboard"
 }
 
 alias c="clear"

@@ -22,6 +22,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
 nnoremap ; :
+nnoremap L $
+nnoremap H ^
 " vim-markdown-folding
 nnoremap <Space> za
 nnoremap <C-m> zMzv
