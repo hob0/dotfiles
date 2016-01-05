@@ -21,6 +21,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
+vnoremap <leader>c :w !pbcopy<CR><CR>
 nnoremap ; :
 nnoremap L $
 nnoremap H ^
@@ -31,7 +32,6 @@ nnoremap <C-m> zMzv
 " hexediting
 nmap <Leader>hh :%!xxd<CR>
 nmap <Leader>hb :%!xxd -r<CR>
-
 nmap <Leader>ev :e $MYVIMRC<CR>
 nmap <Leader>sv :so $MYVIMRC<CR>
 nmap <Leader>td :e ~/TODO.mkd<CR>
