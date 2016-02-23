@@ -99,10 +99,12 @@ open Praetorian\ -\ "$1"\ -\ Daily\ Update\ -\ "$dt".docx
 alias c="clear"
 alias ncat="/usr/local/Cellar/nmap/6.47/bin/ncat"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias python="python3.4"
+alias python="python3"
 alias pip="pip3"
 alias en="cd ~/engagements"
 alias pr="cd ~/Projects"
 alias p="echo `pbpaste`"
+alias dirsearch="python3 ~/tools/dirsearch/dirsearch.py"
+alias vagrant="/opt/vagrant/bin/vagrant"
 # alias daily="cp ~/Engagements/docs/Praetorian\ -\ Client\ -\ Daily\ Update\ -\ MM-DD-YYYY.docx ."
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
