@@ -108,3 +108,8 @@ alias dirsearch="python3 ~/tools/dirsearch/dirsearch.py"
 alias vagrant="/opt/vagrant/bin/vagrant"
 # alias daily="cp ~/Engagements/docs/Praetorian\ -\ Client\ -\ Daily\ Update\ -\ MM-DD-YYYY.docx ."
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PYENV_ROOT=/usr/local/var/pyenv # use Homebrew's directories rather than ~/.pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi # enable shims and autocomplete
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi # # enable auto-activation
+export EDITOR=vim
