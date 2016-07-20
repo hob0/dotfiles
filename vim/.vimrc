@@ -54,3 +54,4 @@ autocmd FileType markdown set spell
 hi clear SpellBad
 hi SpellBad cterm=underline
 
+set backspace=2 " make backspace work like most other apps
