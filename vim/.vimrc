@@ -49,6 +49,6 @@ nmap <Leader>nt :NERDTreeToggle<CR>
 autocmd FileType html,css setlocal shiftwidth=2 tabstop=2 softtabstop=2
 " set spell check for markdown files
 autocmd FileType markdown set spell
-set spell spelllang=en_us
+autocmd FileType markdown set spell spelllang=en_us
 
 set backspace=2 " make backspace work like most other apps
